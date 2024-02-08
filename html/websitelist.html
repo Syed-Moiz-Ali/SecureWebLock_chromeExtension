@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restricted Websites List</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      color: #333;
+      text-align: center;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .website {
+      flex: 1;
+    }
+    .delete-btn {
+      color: #ff6347;
+      cursor: pointer;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h2>Restricted Websites List</h2>
+  <ul id="websiteList"></ul>
+  <br />
+  <a href="#" onclick="closeWebsiteList()">Close</a>
+</body>
+<script src="/js/websitelist.js"></script>
+</html>

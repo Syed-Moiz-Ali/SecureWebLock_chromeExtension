@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extension Settings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f4f6; /* Light gray background */
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    input {
+      margin-bottom: 20px;
+      padding: 10px;
+      width: calc(100% - 20px); /* Adjusted width */
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      font-size: 1em;
+    }
+    .input-container {
+      position: relative;
+    }
+    .password-icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #555; /* Gray color for icon */
+    }
+    .password-icon:hover {
+      color: #333; /* Darker color on hover */
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h2>Change Password</h2>
+  <div class="input-container">
+    <input type="password" id="previousPassword" placeholder="🔒 Enter previous password">
+    <i class="password-icon fas fa-eye-slash" id="PasswordIcon"></i>
+  </div>
+  <input type="password" id="newPassword" placeholder="🔒 Enter new password" style="display:none;" />
+  <button id="savePasswordBtn" style="display:none;"><i class="fas fa-save"></i> Save Password</button>
+  <br /><br />
+  <a href="#" id="closeSettingsLink"><i class="fas fa-times"></i> Close</a>
+
+  <script src="/js/settings.js"></script>
+
+    
+  </script>
+</body>
+</html>
