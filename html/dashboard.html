@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protection Extension</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            width: 300px;
+
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f0f0f0;
+        }
+        .section h2 {
+            margin-top: 0;
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .section p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .section ul {
+            margin-left: 20px;
+            color: #555;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .icon {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Password Protection Extension</h1>
+        </div>
+        <div class="section">
+            <h2>Restricted Websites</h2>
+            <p>Number of Restricted Websites: 3</p>
+            <p>Recent Restricted Websites:</p>
+            <ul>
+                <li>Website 1</li>
+                <li>Website 2</li>
+                <li>Website 3</li>
+            </ul>
+            <button class="button"><i class="icon fas fa-plus"></i> Add Website</button>
+        </div>
+        <div class="section">
+            <h2>Password Settings</h2>
+            <p>Change your extension password here.</p>
+            <button class="button"><i class="icon fas fa-key"></i> Change Password</button>
+        </div>
+        <div class="section">
+            <h2>Profile</h2>
+            <p>View and edit your profile information.</p>
+            <button class="button"><i class="icon fas fa-user"></i> Edit Profile</button>
+        </div>
+    </div>
+</body>
+</html>

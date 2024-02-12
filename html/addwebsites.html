@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Restricted Websites</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      width: 400px;
+      padding: 30px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .container h2 {
+      color: #333;
+      font-weight: bold;
+      margin-top: 0;
+      text-align: center;
+    }
+    label {
+      color: #555;
+      display: block;
+      margin-bottom: 10px;
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: vertical;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .close-link {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      color: #666;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .close-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2><i class="fas fa-lock"></i> Add Restricted Websites</h2>
+    <label for="websitesInput">Enter websites (comma-separated):</label>
+    <textarea id="websitesInput" placeholder="e.g., website1.com, website2.com"></textarea>
+    <button id="saveWebsitesButton">Save Websites</button>
+    <a href="#" class="close-link" id="closeAddWebsitesButton">Close <i class="fas fa-times-circle"></i></a>
+  </div>
+</body>
+<script src="/js/addwebsites.js"></script>
+</html>
